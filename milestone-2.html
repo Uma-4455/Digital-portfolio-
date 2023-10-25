@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Digital Portfolio</title>
+    <link rel="shortcut icon" href="http://127.0.0.1:5500/favicon-16x16.png" type="image/x-icon">
+    <style>
+        body {
+            background-image: url(background.jpg);
+            background-size: cover;
+            background-position:right;
+
+        }
+        h1.intro{
+            color:white;
+            text-align:center;
+            padding-top:70px;
+
+        }
+        p.intro{
+            color:white;
+            text-align: center;
+            padding-top: 10px;
+   
+        }
+        .desc{
+            color: white;
+            padding-top: 70px;
+            padding-left: 50px;
+            font-size: large;
+            background-image:inherit;
+        }
+        nav  {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            float: right;
+        }
+        nav ul li {
+            display: inline-block;
+            list-style: none;
+            margin: 10px 20px;
+            
+        }
+
+       
+
+        nav ul li a {
+            text-decoration: none;
+            color: whitesmoke;
+            font-weight: bold;
+        }
+
+        div {
+            border: 80px;
+            width: 50%; 
+            padding-right: 20px;
+            text-align: left;
+            padding: 50px;
+          
+            margin: 50px;
+ font-family:inherit;        }
+        
+        footer {
+     
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;}
+         
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:5500/index.html#%20home">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html#about">About Me</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html#projects">Projects</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1 class="intro">ABITHA KARMEGAM</h1>
+            <p class="intro">Budding Full-Stack Developer</p>
+             
+                 <div>
+                    <p class="desc">
+                        <br>
+                        <br>
+                        <br>
+                       <br> I'm Abitha ,an aspiring web developer eager to leave my mark in the digital world.With
+                        passion for crafting dynamic and user-centric websites,I'm here to transform ideas into
+                        interactive online experiences.
+                    </p>
+                </div>
+             
+        </section>
+    </main>
+    <footer class="icons">
+        <p>©@ABITHA</p>
+       </footer>
+
+<!-- Code injected by live-server -->
+<script>
+    // <![CDATA[  <-- For SVG support
+    if ('WebSocket' in window) {
+        (function () {
+            function refreshCSS() {
+                var sheets = [].slice.call(document.getElementsByTagName("link"));
+                var head = document.getElementsByTagName("head")[0];
+                for (var i = 0; i < sheets.length; ++i) {
+                    var elem = sheets[i];
+                    var parent = elem.parentElement || head;
+                    parent.removeChild(elem);
+                    var rel = elem.rel;
+                    if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+                        var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+                        elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+                    }
+                    parent.appendChild(elem);
+                }
+            }
+            var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+            var address = protocol + window.location.host + window.location.pathname + '/ws';
+            var socket = new WebSocket(address);
+            socket.onmessage = function (msg) {
+                if (msg.data == 'reload') window.location.reload();
+                else if (msg.data == 'refreshcss') refreshCSS();
+            };
+            if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+                console.log('Live reload enabled.');
+                sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+            }
+        })();
+    }
+    else {
+        console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+    }
+    // ]]>
+</script>
+
+
+</body></html>
